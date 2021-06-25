@@ -17,6 +17,8 @@ class User {
   @Column()
   admin: boolean;
 
+  // Trecho para exclusão da senha do user na resposta usando o @Exclude da biblioteca class-transformer
+  // Tb é alterado o arquivo ListUsersService.ts usando o classToPlain tb da class-transformer
   @Exclude()
   @Column()
   password: string;
